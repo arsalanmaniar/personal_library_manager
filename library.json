@@ -1,0 +1,51 @@
+[
+    {
+        "Title": "Clean Code",
+        "Author": "Robert C. Martin",
+        "Publication Year": 2008,
+        "Genre": "Software Development",
+        "Read Status": true
+    },
+    {
+        "Title": "The Pragmatic Programmer",
+        "Author": "Andrew Hunt, David Thomas",
+        "Publication Year": 1999,
+        "Genre": "Software Engineering",
+        "Read Status": false
+    },
+    {
+        "Title": "You Don’t Know JS",
+        "Author": "Kyle Simpson",
+        "Publication Year": 2014,
+        "Genre": "JavaScript",
+        "Read Status": true
+    },
+    {
+        "Title": "Python Crash Course",
+        "Author": "Eric Matthes",
+        "Publication Year": 2015,
+        "Genre": "Python",
+        "Read Status": true
+    },
+    {
+        "Title": "Eloquent JavaScript",
+        "Author": "Marijn Haverbeke",
+        "Publication Year": 2011,
+        "Genre": "JavaScript",
+        "Read Status": false
+    },
+    {
+        "Title": "Design Patterns: Elements of Reusable Object-Oriented Software",
+        "Author": "Erich Gamma, Richard Helm, Ralph Johnson, John Vlissides",
+        "Publication Year": 1994,
+        "Genre": "Software Architecture",
+        "Read Status": false
+    },
+    {
+        "Title": "Introduction to the Theory of Computation",
+        "Author": "Michael Sipser",
+        "Publication Year": 1996,
+        "Genre": "Computer Science",
+        "Read Status": true
+    }
+]
