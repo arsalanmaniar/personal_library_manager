@@ -3,3 +3,7 @@ pandas==2.2.0
 plotly==5.18.0
 sreamlit-lottie==0.0.5
 request==2.31.0
+streamlit
+pandas
+numpy
+
