@@ -381,7 +381,7 @@ elif st.session_state.current_view == "search":
                                 "Read" if book["read_status"] else "Unread"
                             }</span></p>
                             </div>
-"""),unsafe_allow_html=True
+""",unsafe_allow_html=True)
         elif search_term:
             st.markdown(f"<div class='warning-message'>No books found matching your search.</div>", unsafe_allow_html=True)
 
