@@ -403,7 +403,7 @@ elif st.session_state.current_view == "stats":
 
 
         if stats['author']:
-            st.markdown("<h3> Top Author</h3>"),unsafe_allow_html=True
+            st.markdown("<h3> Top Author</h3>",unsafe_allow_html=True)
             top_authors = dict(list(stats['author'].item())[:5])
             for author, count in top_authors.items():
                 st.markdown(f"**{author}**: {count} book {'s' if count > 1 else ''}")
