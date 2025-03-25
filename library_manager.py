@@ -318,7 +318,7 @@ if st.session_state.current_view == "add":
             add_book(title,author,publication_year,genre,read_bool)
 
     if st.session_state.book_added:
-        st.markdown("<div class= 'success-message'> Book added successfully!</div>"), unsafe_allow_html=True
+        st.markdown("<div class='success-message'> Book added successfully!</div>", unsafe_allow_html=True)
         st.balloons()
         st.session_state.book_added = False
 elif st.session_state.current_view == "library":
