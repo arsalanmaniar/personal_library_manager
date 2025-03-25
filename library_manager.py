@@ -251,7 +251,7 @@ def create_visualizations(stats):
                 hight=400,
             )
             st.plotly_chart(fig_genres, use_container_width=True)
-if stats['decades']:
+if stats and isinstance(stats, dict) and 'decades' in stats:
     decades_df = pd.DataFrame({
         'Decade': [f"{decade}s" for decade in stats['decades'].keys()],
         'Count': list(stats['decades'].values()),
