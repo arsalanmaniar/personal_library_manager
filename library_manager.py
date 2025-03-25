@@ -9,7 +9,6 @@ import plotly.graph_objects as go
 from streamlit_lottie import st_lottie
 import requests
 
-# Set page configuration
 st.set_page_config(
     page_title="Library Manager",
     page_icon="📚",
@@ -17,7 +16,6 @@ st.set_page_config(
     initial_sidebar_state="expanded",
 )
 
-# Custom CSS
 st.markdown("""
 <style>
     .main-header {
@@ -71,7 +69,6 @@ def load_lottie_url(url):
     except:
         return None
 
-# Initialize session state
 if 'library' not in st.session_state:
     st.session_state.library = []
 if 'search_results' not in st.session_state:
@@ -132,7 +129,6 @@ def create_visualizations(stats):
         )])
         st.plotly_chart(fig_read_status, use_container_width=True)
 
-# Load the library
 load_library()
 
 st.sidebar.title("Navigation")
