@@ -196,8 +196,8 @@ def get_library_stats():
 genres = dict(sorted(genres.items(), key=lambda x: x[1], reverse=True))
 authors = dict(sorted(authors.items(), key=lambda x: x[1], reverse=True))
 decades = dict(sorted(decades.items(), key=lambda x: x[0]))
-
-return {
+def get_data():
+    return {"key": "value"  # ✅ Ye theek hai
     "total_books": total_books,
     "read_books": read_books,
     "percentage_read": percentage_read,
