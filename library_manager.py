@@ -20,18 +20,23 @@ st.set_page_config(
 # Custom CSS
 st.markdown("""
 <style>
+    .stApp {
+        background-color: #0f172a;
+        color: #f8fafc;
+    }
+
     .main-header {
         font-size: 3rem !important;
-        color: #000000 !important;
+        color: #f8fafc !important;
         font-weight: 700;
         margin-bottom: 1rem;
         text-align: center;
-        text-shadow: 2px 2px 2px #f5f5f5;
+        text-shadow: none;
     }
             
     .subheader {
         font-size: 1.8rem !important;
-        color: #000000 !important;
+        color: #f8fafc !important;
         font-weight: 600;
         margin-top: 1rem;
         margin-bottom: 1rem;
@@ -39,35 +44,48 @@ st.markdown("""
             
     .success-message {
         padding: 1rem;
-        background-color: #d4edda;
-        border-left: 1px solid #c3e6cb;
+        background-color: #ffffff;
+        color: #166534;
+        border: 1px solid #d1fae5;
+        border-left: 5px solid #22c55e;
         border-radius: 0.375rem;
     }
     
     .warning-message {
         padding: 1rem;
-        background-color: #fff3cd;
-        border-left: 5px solid #ffeeba;
+        background-color: #ffffff;
+        color: #92400e;
+        border: 1px solid #fde68a;
+        border-left: 5px solid #f59e0b;
         border-radius: 0.375rem;
     }
             
     .book-card {
-        background-color: #f5f5f5;
+        background-color: #f8fafc;
+        color: #111827;
         border-radius: 0.5rem;
         padding: 1rem;
         margin-bottom: 1rem;
-        border-left: 5px solid #f5f5f5;
-        transition: transform 0.3s ease;
+        border: 1px solid #e5e7eb;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
 
     .book-card:hover {
-        transform: translateY(-5px);
-        box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
-    }       
+        transform: translateY(-3px);
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.08);
+    }
+
+    .book-card h3,
+    .book-card p,
+    .book-card strong {
+        color: #111827;
+    }
     
     .read-badge {
-        background-color: #d4edda;
-        color: #155724;
+        background-color: #f0fdf4;
+        color: #166534;
+        border: 1px solid #bbf7d0;
         padding: 0.25rem 0.5rem;
         border-radius: 1rem;
         font-size: 0.875rem;
@@ -75,8 +93,9 @@ st.markdown("""
     }
     
     .unread-badge {
-        background-color: #f8d7da;
-        color: #721c24;
+        background-color: #fef2f2;
+        color: #991b1b;
+        border: 1px solid #fecaca;
         padding: 0.25rem 0.5rem;
         border-radius: 1rem;
         font-size: 0.875rem;
@@ -89,6 +108,24 @@ st.markdown("""
     
     .stButton>button {
         border-radius: 0.375rem;
+        background-color: #f8fafc;
+        color: #111827;
+        border: 1px solid #d1d5db;
+    }
+
+    .stButton>button:hover {
+        border-color: #111827;
+    }
+
+    .stTextInput>div>div>input,
+    .stNumberInput>div>div>input,
+    .stSelectbox>div>div>div {
+        background-color: #f8fafc;
+        color: #111827;
+    }
+
+    [data-testid="stSidebar"] {
+        background-color: #111827;
     }
 </style>
 """, unsafe_allow_html=True)
